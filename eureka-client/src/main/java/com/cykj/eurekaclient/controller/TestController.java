@@ -25,6 +25,7 @@ public class TestController {
     public Object getUser() {
         System.out.println("请求开始");
         User user = new User();
+        User user2 = new User();
         //return this.restTemplate.getForObject("http://server-provider/user/reg", User.class);
         return userFeign.getUser();
     }
