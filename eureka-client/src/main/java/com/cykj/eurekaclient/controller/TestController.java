@@ -20,7 +20,7 @@ public class TestController {
     @Autowired
     private UserFeign userFeign;
 
-
+// lin
     @RequestMapping("/getUser")
     public Object getUser() {
         System.out.println("请求开始");
