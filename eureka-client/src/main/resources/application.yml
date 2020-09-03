@@ -1,0 +1,18 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: eureka-client
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka/ #注册中心地址
+  instance:
+    prefer-ip-address: false # 客户端在注册时使用自己的IP而不是主机名，缺省：false
+
+
+feign:
+  hystrix:
+    enabled: true #开启feign熔断，默认false
